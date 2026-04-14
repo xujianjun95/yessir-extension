@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YesSir 隐私政策</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                   "Hiragino Sans GB", sans-serif;
+      background: #0b0d1c;
+      color: #c8d0e8;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* Background glow */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -120px; left: -80px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(60,100,220,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -100px; right: -80px;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(110,70,215,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .logo {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #1a1f35, #0d1220);
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo svg { display: block; }
+    .header-text h1 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #e0e8ff;
+      letter-spacing: 0.01em;
+    }
+    .header-text p {
+      font-size: 13px;
+      color: rgba(150,165,210,0.6);
+      margin-top: 3px;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #a8bcf0;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px; height: 14px;
+      border-radius: 2px;
+      background: linear-gradient(180deg, #5b8aff, #8b5cf6);
+      flex-shrink: 0;
+    }
+    p {
+      font-size: 14px;
+      color: rgba(190,200,230,0.78);
+      margin-bottom: 10px;
+    }
+    p:last-child { margin-bottom: 0; }
+
+    /* Table */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    thead tr {
+      background: rgba(60,80,160,0.18);
+    }
+    th {
+      padding: 11px 16px;
+      text-align: left;
+      font-weight: 600;
+      color: rgba(170,190,240,0.85);
+      white-space: nowrap;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    td {
+      padding: 10px 16px;
+      color: rgba(185,198,228,0.75);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      vertical-align: top;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: rgba(255,255,255,0.025); }
+
+    /* Highlight card */
+    .card {
+      background: rgba(55,85,195,0.10);
+      border: 1px solid rgba(90,130,255,0.18);
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-size: 14px;
+      color: rgba(190,205,240,0.82);
+    }
+    .card strong {
+      color: rgba(160,190,255,0.9);
+    }
+
+    /* List */
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+    ul li {
+      font-size: 14px;
+      color: rgba(190,200,230,0.78);
+      padding: 4px 0 4px 18px;
+      position: relative;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 12px;
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: rgba(90,130,255,0.55);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      font-size: 12px;
+      color: rgba(130,145,185,0.5);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="30" y1="34" x2="64" y2="68" stroke="#7eb8ff" stroke-width="13" stroke-linecap="round"/>
+        <line x1="98" y1="34" x2="64" y2="68" stroke="#7eb8ff" stroke-width="13" stroke-linecap="round"/>
+        <line x1="64" y1="68" x2="64" y2="100" stroke="#7eb8ff" stroke-width="13" stroke-linecap="round"/>
+        <circle cx="64" cy="100" r="7" fill="#a78bfa"/>
+      </svg>
+    </div>
+    <div class="header-text">
+      <h1>YesSir 隐私政策</h1>
+      <p>Chrome 扩展 · 最后更新：2026 年 4 月</p>
+    </div>
+  </div>
+
+  <!-- 一句话核心承诺 -->
+  <div class="card" style="margin-bottom:36px;">
+    <strong>核心承诺：</strong>YesSir 不收集、不上传、不共享任何用户数据。所有数据仅存储在您本地设备上，完全由您掌控。
+  </div>
+
+  <!-- 收集的数据 -->
+  <section>
+    <h2>我们收集哪些数据</h2>
+    <p>YesSir 仅在您的本地设备上存储以下信息，用于实现扩展功能：</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>数据项</th>
+            <th>存储内容</th>
+            <th>用途</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code style="color:#93c5fd;font-size:12px;">closeCount</code></td>
+            <td>历史累计操作次数（整数）</td>
+            <td>关闭标签 Toast 提示中显示累计次数</td>
+          </tr>
+          <tr>
+            <td><code style="color:#93c5fd;font-size:12px;">dailyStats</code></td>
+            <td>以日期为键的每日操作次数字典</td>
+            <td>悬浮窗中的近 5 日折线图统计</td>
+          </tr>
+          <tr>
+            <td><code style="color:#93c5fd;font-size:12px;">modifierKey</code></td>
+            <td>用户选择的修饰键名称（字符串）</td>
+            <td>记住用户对触发快捷键的自定义配置</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 权限说明 -->
+  <section>
+    <h2>权限使用说明</h2>
+    <p>扩展申请了以下三项 Chrome 权限，均为功能所必需，不用于任何数据收集：</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>权限</th>
+            <th>使用原因</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code style="color:#93c5fd;font-size:12px;">tabs</code></td>
+            <td>读取当前窗口的标签页列表，用于滚轮切换标签页浮层及双击关闭当前标签页功能</td>
+          </tr>
+          <tr>
+            <td><code style="color:#93c5fd;font-size:12px;">storage</code></td>
+            <td>将使用次数统计和修饰键配置保存至本地（<code style="color:#93c5fd;font-size:12px;">chrome.storage.local</code>），数据不离开设备</td>
+          </tr>
+          <tr>
+            <td><code style="color:#93c5fd;font-size:12px;">sessions</code></td>
+            <td>读取并恢复最近关闭的标签页，用于「后悔药」恢复功能</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 数据不会做的事 -->
+  <section>
+    <h2>我们绝不会做的事</h2>
+    <ul>
+      <li>不向任何服务器上传您的数据</li>
+      <li>不收集您的浏览记录、标签页 URL 或页面内容</li>
+      <li>不与任何第三方共享数据</li>
+      <li>不使用任何广告 SDK 或分析追踪工具</li>
+      <li>不在后台静默运行任何网络请求</li>
+    </ul>
+  </section>
+
+  <!-- 数据控制 -->
+  <section>
+    <h2>您对数据的完全控制</h2>
+    <p>所有本地数据均可随时清除：</p>
+    <ul>
+      <li>前往 <strong style="color:rgba(160,190,255,0.85)">chrome://extensions</strong>，找到 YesSir，点击「详情」→「清除数据」</li>
+      <li>或直接卸载扩展，所有本地存储数据将随之完全删除</li>
+    </ul>
+  </section>
+
+  <!-- 第三方 -->
+  <section>
+    <h2>第三方服务</h2>
+    <p>YesSir 不集成任何第三方服务、分析平台或广告网络。扩展的全部逻辑在您的本地浏览器中运行，不存在任何外部依赖。</p>
+  </section>
+
+  <!-- 未成年人 -->
+  <section>
+    <h2>未成年人保护</h2>
+    <p>YesSir 为通用效率工具，不针对儿童设计，也不收集任何个人信息，因此不存在未成年人数据处理问题。</p>
+  </section>
+
+  <!-- 政策变更 -->
+  <section>
+    <h2>政策变更</h2>
+    <p>如本政策发生实质性变更，我们将通过更新本页面的「最后更新」日期予以说明。建议您定期查阅。继续使用扩展即视为您接受最新政策。</p>
+  </section>
+
+  <!-- 联系 -->
+  <section>
+    <h2>联系我们</h2>
+    <p>如对本隐私政策有任何疑问，欢迎通过 Chrome 应用商店的开发者联系渠道与我们沟通。</p>
+  </section>
+
+  <div class="footer">
+    <span>YesSir Chrome Extension</span>
+    <span>本政策适用版本：v1.3 及以上</span>
+  </div>
+
+</div>
+</body>
+</html>
